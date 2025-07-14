@@ -20,9 +20,7 @@ bash scripts/run_inference.sh
 
 This script will run main_analysis.py. The inputs to this are the parquet files containing the distribution. In the current version, the file can be accessed via "cs224c_project/data/distribution/distribution.parquet". The other input file is the location to the folder containing inference data obtained from step 3. The program will automatically loop through the files in the folder and use the relevant parquet files to estimate alpha. The final output is saved to output/{subject_name}_{year}.csv
 
-The above-mentioned approach is more general in that it works for articles related to any field. For the report, we focused on articles related to education research. For that, you can simply run the Jupyter notebooks below:
-
-For reproducing (some of) the results in the report, run:
+The aforementioned approach is more general, as it applies to articles from any field. For the report, we focused on articles related to education research. To reproduce some of the results, you can run the following Jupyter notebooks:
   a. prepare_data.ipynb
   b. reproduce_results.ipynb
   c. validation.ipynb
