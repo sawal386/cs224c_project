@@ -22,8 +22,9 @@ Note that this takes sometime to complete. The most expensive phase of this is a
 
 This script will run the main_analysis.py. The inputs to this are the parquet files containing the distribution. In the current version, the file can be accessed via "project/data/distribution/distribution.parquet". The other input file is location to the folder containing inference data distribution obtained from step 3. The program will automatically loop through the files in the folder and use the relevant parquet files to estimate alpha. The final output is saved to output/{subject_name}_{year}.csv
 
-5. For reproducing the results in the report, run:
+5. For reproducing (some of) the results in the report, run:
    a. prepare_data.ipynb 
    b. reproduce_results.ipynb 
+   c. validation.ipynb 
  
 
